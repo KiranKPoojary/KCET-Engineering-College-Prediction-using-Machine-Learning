@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="static\css\rstyle.css">
+    <!-- <script src="static\js\script.js"></script> -->
+    <title>College Predictor</title>
+</head>
+<body>
+    <header>
+        <h1>KCET College Predictor</h1>
+    </header>
+    <main>
+        <section class="prediction">
+            <h1><b>Your Predicted College is</b></h1><br>
+            <h1 class="college-name" id="college" onchange="updateCollegeInfo()">{{college}}</h1>
+            <h2 id="address"></h2>
+            <h3 id="code"></h3>
+            <script>
+                
+function updateCollegeInfo() {
+    var selectedCollege='{{college}}';
+   
+    var address = document.getElementById("address");
+    var code = document.getElementById("code");
+    
+    // Get the selected college value
+    var collegeName =document.getElementById("college");
+
+    // Use a switch statement to set the information based on the selected college
+    switch (selectedCollege) {
+        case "BMSIT":
+            collegeName.textContent = "BMS Institute of Technology";
+            address.textContent = "Doddaballapura Main Road, Avalahalli, Yelahanka, Bangalore, Karnataka, 560064";
+            code.textContent = "KCET College Code: E001";
+            break;
+        case "MSRIT":
+            collegeName.textContent = "M.S. Ramaiah Institute of Technology";
+            address.textContent = "MSR Nagar, MSRIT Post, Mathikere, Bangalore, Karnataka, 560054";
+            code.textContent = "KCET College Code: E004";
+            break;
+        case "BMSCE":
+            collegeName.textContent = "BMS College of Engineering";
+            address.textContent = "Bull Temple Road, Basavanagudi, Bangalore, Karnataka, 560019";
+            code.textContent = "KCET College Code: E006";
+            break;
+        case "RVCE":
+            collegeName.textContent = "R.V. College of Engineering";
+            address.textContent = "R.V. Vidyaniketan Post, Mysore Road, Bangalore, Karnataka, 560059";
+            code.textContent = "KCET College Code: E008";
+            break;
+        case "PES RING ROAD":
+            collegeName.textContent = "PES University (Ring Road Campus)";
+            address.textContent = "100 Feet Ring Road, Banashankari Stage III, Bangalore, Karnataka, 560085";
+            code.textContent = "KCET College Code: E092";
+            break;
+        case "DSCE":
+            collegeName.textContent = "Dayananda Sagar College of Engineering";
+            address.textContent = "Shavige Malleshwara Hills, Kumaraswamy Layout, Bangalore, Karnataka, 560078";
+            code.textContent = "KCET College Code: E046";
+            break;
+        case "BIT":
+            collegeName.textContent = "Bangalore Institute of Technology";
+            address.textContent = "K.R. Road, V V Puram, Bangalore, Karnataka, 560004";
+            code.textContent = "KCET College Code: E046";
+            break;
+        case "JSSCE":
+            collegeName.textContent = "JSS Science and Technology University";
+            address.textContent = "JSS Technical Institutions Campus, Mysore, Karnataka, 570006";
+            code.textContent = "KCET College Code: E066";
+            break;
+        case "PES ELECTRONIC CITY":
+            collegeName.textContent = "PES University (Electronic City Campus)";
+            address.textContent = "Electronic City Campus, Hosur Road, Bangalore, Karnataka, 560100";
+            code.textContent = "KCET College Code: E092";
+            break;
+        case "NIE":
+            collegeName.textContent = "National Institute of Engineering";
+            address.textContent = "Mananthavady Road, Jayalakshmipuram, Mysore, Karnataka, 570008";
+            code.textContent = "KCET College Code: E056";
+            break;
+        case "MSRUAS":
+            collegeName.textContent = "M.S. Ramaiah University of Applied Sciences";
+            address.textContent = "University House, Gnanagangothri Campus, New BEL Road, MSR Nagar, Bangalore, Karnataka, 560054";
+            code.textContent = "KCET College Code: E102";
+            break;
+        case "DSAT KANAKAPUR":
+            collegeName.textContent = "Dayananda Sagar Academy of Technology and Management (Kanakapura)";
+            address.textContent = "Kanakapura Road, Kumaraswamy Layout, Bangalore, Karnataka, 560078";
+            code.textContent = "KCET College Code: E048";
+            break;
+        case "RVIT":
+            collegeName.textContent = "R.V. Institute of Technology";
+            address.textContent = "R.V. Institute of Technology, R.V. Vidyaniketan Post, Mysore Road, Bangalore, Karnataka, 560059";
+            code.textContent = "KCET College Code: E136";
+            break;
+        case "AIT":
+            collegeName.textContent = "Acharya Institute of Technology";
+            address.textContent = "Acharya Dr. Sarvepalli Radhakrishnan Road, Soldevanahalli, Bangalore, Karnataka, 560107";
+            code.textContent = "KCET College Code: E009";
+            break;
+        case "RNSIT":
+            collegeName.textContent = "R.N. Shetty Institute of Technology";
+            address.textContent = "No. 1, R.N. Shetty Institute of Technology Campus, Chikkabanavara, Bangalore, Karnataka, 560090";
+            code.textContent = "KCET College Code: E001";
+            break;
+        case "REVA":
+            collegeName.textContent = "Reva University";
+            address.textContent = "Rukmini Knowledge Park, Kattigenahalli, Yelahanka, Bangalore, Karnataka, 560064";
+            code.textContent = "KCET College Code: E121";
+            break;
+        case "OXFORD":
+            collegeName.textContent = "The Oxford College of Engineering";
+            address.textContent = "10th Milestone, Hosur Road, Bangalore, Karnataka, 560068";
+            code.textContent = "KCET College Code: E065";
+            break;
+        case "DSU HOSUR":
+            collegeName.textContent = "Dayananda Sagar University (Hosur Road Campus)";
+            address.textContent = "Hosur Road, Kudlu Gate, Bangalore, Karnataka, 560068";
+            code.textContent = "KCET College Code: E046";
+            break;
+        case "MCE":
+            collegeName.textContent = "M. S. Engineering College";
+            address.textContent = "Navarathna Agrahara, Sadahalli, Bangalore, Karnataka, 562110";
+            code.textContent = "KCET College Code: E058";
+            break;
+        case "NMIT":
+            collegeName.textContent = "Nitte Meenakshi Institute of Technology";
+            address.textContent = "P.B. No. 6429, Yelahanka, Bangalore, Karnataka, 560064";
+            code.textContent = "KCET College Code: E095";
+            break;
+        case "SMVIT":
+            collegeName.textContent = "Sri Venkateshwara College of Engineering";
+            address.textContent = "Vidyanagar, Bengaluru International Airport Road, Bangalore, Karnataka, 562157";
+            code.textContent = "KCET College Code: E092";
+            break;
+        case "CMRIT":
+            collegeName.textContent = "CMR Institute of Technology";
+            address.textContent = "132, AECS Layout, ITPL Main Road, Bangalore, Karnataka, 560037";
+            code.textContent = "KCET College Code: E152";
+            break;
+        case "PRESIDENCY":
+            collegeName.textContent = "Presidency University";
+            address.textContent = "Itgalpur, Rajanakunte, Yelahanka, Bangalore, Karnataka, 560064";
+            code.textContent = "KCET College Code: E121";
+            break;
+        case "HKBK":
+            collegeName.textContent = "HKBK College of Engineering";
+            address.textContent = "22/1, Nagawara, Bangalore, Karnataka, 560045";
+            code.textContent = "KCET College Code: E178";
+            break;
+        case "CAMBRIDGE":
+            collegeName.textContent = "Cambridge Institute of Technology";
+            address.textContent = "K.R. Puram, Bangalore, Karnataka, 560036";
+            code.textContent = "KCET College Code: E254";
+            break;
+        case "GLOBAL":
+            collegeName.textContent = "Global Academy of Technology";
+            address.textContent = "Ideal Homes Township, Rajarajeshwari Nagar, Bangalore, Karnataka, 560098";
+            code.textContent = "KCET College Code: E257";
+            break;
+        case "MVJ":
+            collegeName.textContent = "MVJ College of Engineering";
+            address.textContent = "Near ITPB, Whitefield, Bangalore, Karnataka, 560067";
+            code.textContent = "KCET College Code: E282";
+            break;
+        case "AMC":
+            collegeName.textContent = "AMC Engineering College";
+            address.textContent = "Bannerghatta Main Road, Bangalore, Karnataka, 560083";
+            code.textContent = "KCET College Code: E243";
+            break;
+        case "KSIT":
+            collegeName.textContent = "KS Institute of Technology";
+            address.textContent = "Raghuvanahalli, Kanakapura Main Road, Bangalore, Karnataka, 560062";
+            code.textContent = "KCET College Code: E295";
+            break;
+        case "DONBOSCO":
+            collegeName.textContent = "Don Bosco Institute of Technology";
+            address.textContent = "Kumbalagodu, Mysore Road, Bangalore, Karnataka, 560074";
+            code.textContent = "KCET College Code: E327";
+            break;
+        default:
+            // Handle the default case if needed
+            // collegeName.textContent="N/A";
+            // address.textContent="N/A";
+            // code.textContent="N/A"
+        
+    }
+}
+
+window.onload = updateCollegeInfo;
+
+
+
+            </script>
+            
+        </section>
+        <!-- <section>
+            <a href="templates\index2.html?collegeName={{college}}">Click to view college data</a> 
+
+      
+
+        </section> -->
+    </main>
+    <footer>
+        <p>&copy; 2023 KCET Engineering College Predictor</p>
+    </footer>
+</body>
+</html>
