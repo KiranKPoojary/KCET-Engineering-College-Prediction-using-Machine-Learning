@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="static\css\style.css">
+    <title>KCET College Predictor</title>
+</head>
+<body>
+    <div class="container">
+        <h1>KCET College Predictor</h1>
+        <form  action="/" method="POST">
+            <div class="form-group">
+                <label for="kcetRanking">Your 2023 KCET Ranking:</label>
+                <input type="number" id="kcetRanking" name="rank" required placeholder="Enter Your Rank" max="100000">
+            </div>
+            <div class="form-group">
+                <label for="interestedBranch">Choose your Branch:</label>
+                <select id="interestedBranch" name="branch">
+                    <option value="CSE">Computer Science</option>
+                    <option value="ISE">Information Science</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="category">Select your Category:</label>
+                <select id="category" name="category" required>
+                    <option value="GM">GM (General Merit)</option>
+                    <option value="OBC">OBC (Other Backward Classes)</option>
+                    <option value="SC">SC (Scheduled Caste)</option>
+                </select>
+            </div>
+            <button type="submit" value="Predict">Predict</button>
+        </form>
+    </div>
+</body>
+</html>
