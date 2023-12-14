@@ -15,3 +15,8 @@ Focusing specifically on the Computer Science (CSE) and Information Science (ISE
 Data Source:
 
 The model is trained on the cut-off data from the KCET examinations held in 2021 and 2022. This ensures that the predictions are based on recent and relevant information.
+
+Model Performance:
+The Random Forest Classifier model used in this project achieves an impressive accuracy score of 87.9%. This high accuracy ensures that the predictions provided to users are reliable and valuable in making informed decisions about their college choices.
+
+Feel free to explore, contribute, and provide feedback to enhance the accuracy and features of the prediction system!
