@@ -1,5 +1,5 @@
 
-# KCET Engineering College Prediction Using Machine Learning
+# 2023 KCET Engineering College Prediction Using Machine Learning
 
 # Overview:
 This project aims to assist KCET (Karnataka Common Entrance Test) engineering aspirants in predicting the colleges they are likely to get admitted to based on their engineering ranking. The system utilizes a Random Forest Classifier model trained on data from the KCET cut-off ranks for the years 2021 and 2022. The model achieves an accuracy score of 87.9%, providing reliable predictions for students aspiring to pursue Computer Science (CSE) and Information Science (ISE) branches.
