@@ -27,3 +27,9 @@ The Random Forest Classifier model used in this project achieves an impressive a
 
 Feel free to explore, contribute, and provide feedback to enhance the accuracy and features of the prediction system!
 
+## Screenshots
+<img src="./img1.png"></img>
+
+<img src="./img2.png"></img>
+
+<img src="./img3.png"></img>
